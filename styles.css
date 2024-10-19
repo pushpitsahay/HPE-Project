@@ -4,7 +4,8 @@ body {
 }
 .main-content{
   background-color: #f5fff6f8;
-  padding: 30px;
+  padding: 35px;
+  margin-bottom: 0px;
 }
 /* Sidebar */
 .sidebar {
@@ -35,16 +36,14 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 3px;
   padding: 1px;
 }
 .search-section input {
   width: 500px;
-  padding: 10px 100px;
   border-radius: 5px;
   font-size: 13px;
   border: 1px solid transparent;
-  outline: 1px solid transparent;
 }
 .search-btn {
   padding: 12px 12px;
@@ -56,6 +55,9 @@ body {
   cursor: pointer;
 }
 
+/* Dropdown */
+
+/* Main Content */
 .card {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: none;
@@ -98,27 +100,4 @@ nav ul {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-  }
-
-  .search-container {
-    display: flex;
-    width: 635px;
-    background-color: white;
-    border-radius: 5px;
-  }
-
-  .input-box {
-    border: none;
-    outline: none;
-    width: 78%;
-  }
-
-  .input-box:focus {
-    outline: none;
-    border: none;
-}
-
-  .search-bar {
-    max-width: 600px;
-    margin: 20px auto;
   }
