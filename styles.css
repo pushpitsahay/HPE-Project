@@ -5,7 +5,6 @@ body {
 .main-content{
   background-color: #f5fff6f8;
   padding: 35px;
-  /* height : 80vh; */
 }
 /* Sidebar */
 .sidebar {
@@ -30,6 +29,7 @@ body {
 .sidebar ul li a:hover i {
   color: white;
 }
+
 /* Search */
 .search-section {
   display: flex;
@@ -125,13 +125,21 @@ nav li:hover .dropdown {
     border-radius: 3px;
 }
 .card h3 {
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+}
+.shadow {
+  font-size: 20px;
+  color: #F3642C;
+  margin-right: 10px;
+  background-color: #eff2f9;
+  padding: 20px;
+  border-radius: 50%;
 }
 .center {
   align-content: center;
 }
-.left {
+.left{
   text-align: left;
 }
 
