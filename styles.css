@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+.main-content{
+  background-color: #f5fff6f8;
+  padding: 30px;
+}
+/* Sidebar */
+.sidebar {
+    min-width: 250px;
+}
+.sidebar ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px 15px;
+  border-radius: 3px;
+}
+.sidebar ul li a:hover {
+  background-color: #F3642C;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar ul li a:hover i {
+  color: white;
+}
+/* Navbar */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1px;
+}
+.search-section input {
+  width: 500px;
+  padding: 10px 100px;
+  border-radius: 5px;
+  font-size: 13px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+.search-btn {
+  padding: 12px 12px;
+  background-color: #08b188;
+  color: white;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #ff6f3d;
+    text-decoration: none;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+}
+
+.center {
+    align-content: center;
+}
+
+.left {
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .search-container {
+    display: flex;
+    width: 635px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .input-box {
+    border: none;
+    outline: none;
+    width: 78%;
+  }
+
+  .input-box:focus {
+    outline: none;
+    border: none;
+}
+
+  .search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+  }
