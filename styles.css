@@ -5,7 +5,7 @@ body {
 .main-content{
   background-color: #f5fff6f8;
   padding: 35px;
-  margin-bottom: 0px;
+  /* height : 80vh; */
 }
 /* Sidebar */
 .sidebar {
@@ -15,11 +15,11 @@ body {
   color: black;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 17px;
   gap: 15px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  padding: 15px 15px;
+  padding: 15px;
   border-radius: 3px;
 }
 .sidebar ul li a:hover {
@@ -30,7 +30,7 @@ body {
 .sidebar ul li a:hover i {
   color: white;
 }
-/* Navbar */
+/* Search */
 .search-section {
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ body {
 }
 .search-btn {
   padding: 12px 12px;
-  background-color: #08b188;
+  background-color: #F3642C;
   color: white;
   border: none;
   font-size: 13px;
@@ -55,49 +55,91 @@ body {
   cursor: pointer;
 }
 
-/* Dropdown */
+/* Navbar */
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: -5px;
+  padding-bottom: 15px;
+  gap: 10px;
+  position: relative;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: max-content;
+}
+nav ul li p {
+  color: #333;
+  width: 40ch;
+  line-height: 24px;
+  font-size: 13px;
+}
+nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  z-index: 10;
+  padding: 20px;
+}
+nav li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown ul li {
+  padding: 5px 10px;
+  width: fit-content;
+}
+.listing {
+  margin-top: -5px;
+  border: 1px solid silver;
+  padding: 8px;
+  border-radius: 3px;
+}
 
 /* Main Content */
 .card {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
 }
-
 .card h3 {
-    font-size: 36px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
-
-ul li a {
-    color: #ff6f3d;
-    text-decoration: none;
-}
-
-.active {
-    background-color: orange;
-    color: white;
-}
-
 .center {
-    align-content: center;
+  align-content: center;
 }
-
 .left {
-    text-align: left;
+  text-align: left;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  nav ul li a {
+/* Recent Activity */
+ul li a {
+    color: #F3642C;
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
-  }
+}
+
+
+/* Graph & Recent Activities */
