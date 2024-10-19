@@ -35,15 +35,14 @@
       <!-- Main Content -->
       <div class="container-fluid p-4">
         <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between mb-4">
           <div class="search-section">
             <input type="text" class="form-control input-box" placeholder="What type or location of business do you want to buy or sell?"/>
             <button class="search-btn btn-warning ms-3 result-btn"> SHOW RESULTS</button>
           </div>
           <div class="d-flex align-items-center ms-auto">
-            <span class="me-3">Can we help you?</span>
-            <span class="me-3">(888) 212-4747</span>
-            <button class="btn btn-outline-warning">Create Listing</button>
+            <span class="me-3"><i class="fa-solid fa-message"></i> Can we help you?</span>
+            <span class="me-3"><i class="fa-solid fa-phone"></i> (888) 212-4747</span>
           </div>
         </div>
 
@@ -51,43 +50,35 @@
           <ul>
             <li>
               <div class="dropdown">
-                <a href="#"
-                  class="btn btn-secondary dropdown-item dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                ><i class="fa-solid fa-magnifying-glass"></i>
-                  <b style="">Search Businesses</b></a>
-                </button>
+                <a href="#"class="btn btn-secondary dropdown-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i> Search Businesses</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                  <li><a class="dropdown-item" href="#"><b>Hybrid Cloud Platform</b></a>
+                    <p>Bring the cloud experlence to all your IT.
+                      <br>
+                      Deploy and manage resources across your private and public clouds while retaining control of your data and flexibility over how you consume and manage your services.
+                    </p>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><b>HPE GreenLake</b></a>
+                    <p>Platform</p>
+                    <p>Services</p>
+                    <p>Marketplace</p>
+                    <p>Launch HPE GreenLake</p>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><b>All Products and Solutions</b></a>
+                    <p>Product types</p>
+                    <p>Solutions by topic</p>
+                    <p>Industries</p>
+                    <p>See all</p>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
-              <a href="#"
-                ><i class="fa-regular fa-address-card"></i> Advertising</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-file"></i> Resources</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-pen-to-square"></i> Blog</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-comment"></i> Discussions</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-calendar"></i> Events</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-user"></i> About Us</a>
-            </li>
+            <li><a href="#"><i class="fa-regular fa-address-card"></i> Advertising</a></li>
+            <li><a href="#"><i class="fa-regular fa-file"></i> Resources</a></li>
+            <li><a href="#"><i class="fa-regular fa-pen-to-square"></i> Blog</a></li>
+            <li><a href="#"><i class="fa-regular fa-comment"></i> Discussions</a></li>
+            <li><a href="#"><i class="fa-regular fa-calendar"></i> Events</a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i> About Us</a></li>
           </ul>
         </nav>
 
@@ -155,22 +146,19 @@
         <!-- Content Section -->
         <div class="row">
           <!-- Graph -->
-          <div class="col-md-7">
+          <div class="col-md-6">
             <div class="card p-4">
               <h4>Total Views on My Listing</h4>
-              <canvas id="viewsChart" height="150"></canvas>
+              <canvas id="viewsChart" height="210"></canvas>
             </div>
           </div>
 
           <!-- Recent Activities -->
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="card p-4">
               <h4>Recent Activities</h4>
               <ul class="list-unstyled">
-                <li class="mb-2">
-                  <span><i class="fa-solid fa-id-card"></i></span> Your listing
-                  <a href="#">Mexican Restaurant</a> has been approved!
-                </li>
+                <li class="mb-2"><span><i class="fa-solid fa-id-card"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
                 <li class="mb-2">
                   <span><i class="fa-solid fa-id-card"></i></span> Kathy Brown
                   left a review on <a href="#">Hair Salon</a>.
