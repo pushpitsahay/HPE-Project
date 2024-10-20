@@ -14,31 +14,30 @@
     <div class="d-flex">
       <!-- Sidebar -->
       <div class="sidebar bg-white p-3 text-white vh-100">
-        <h2 class="mb-3 text-center">
+        <h2 class="mb-3 text-center logo">
           <span style="color: #F3642C">BIZ</span><span style="color: #184996">BEN</span>
         </h2>
         <ul class="nav flex-column">
-          <li><a href="#"><i class="fa-solid fa-bars"></i> Dashboard</a></li>
-          <li><a href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
-          <li><a href="#"><i class="fa-solid fa-rectangle-list"></i> My Listings</a></li>
-          <li><a href="#"><i class="fa-solid fa-square-plus"></i> Add New Listing</a></li>
-          <li><a href="#"><i class="fa-solid fa-heart"></i> Favorites</a></li>
-          <li><a href="#"><i class="fa-solid fa-receipt"></i> My Invoices</a></li>
-          <li><a href="#"><i class="fa-solid fa-envelope"></i> Inbox</a></li>
-          <li><a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i> Saved Searches</a></li>
-          <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i> Email Alerts</a></li>
-          <li><a href="#"><i class="fa-solid fa-flag"></i> Email Reports</a></li>
-          <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-bars"></i> Dashboard</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-user"></i> My Profile</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-rectangle-list"></i> My Listings</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-square-plus"></i> Add New Listing</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-heart"></i> Favorites</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-receipt"></i> My Invoices</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-envelope"></i> Inbox</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-magnifying-glass-plus"></i> Saved Searches</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-circle-exclamation"></i> Email Alerts</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-flag"></i> Email Reports</a></li>
+          <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
         </ul>
       </div>
 
-      <!-- Main Content -->
       <div class="container-fluid p-4">
         <!-- Header -->
         <div class="d-flex justify-content-between mb-4">
           <div class="search-section">
             <input type="text" class="form-control input-box" placeholder="What type or location of business do you want to buy or sell?"/>
-            <button class="search-btn btn-warning ms-3 result-btn"> SHOW RESULTS</button>
+            <button class="search-btn btn-warning ms-3 result-btn"><i class="fa-solid fa-magnifying-glass"></i> SHOW RESULTS</button>
           </div>
           <div class="d-flex align-items-center ms-auto">
             <span class="me-3"><i class="fa-solid fa-message"></i> Can we help you?</span>
@@ -51,7 +50,7 @@
           <ul>
             <li>
               <a href="#"><i class="fa-solid fa-magnifying-glass"></i> SEARCH BUSINESSES</a>
-              <div class="dropdown">
+              <div class="dropdown"> <!-- Custom CSS For Dropdown -->
                 <ul>
                   <li><a href="#"><b>Hybrid Cloud Platform</b></a>
                     <p>Bring the cloud experlence to all your IT.
@@ -88,12 +87,11 @@
             </div>
           </ul>
         </nav>
-
+        
         <div class="main-content">
-        <!-- Dashboard Greeting -->
+          
         <h2 class="mb-1">Hi, John!</h2>
         <p class="text-muted">Ready to jump back in?</p>
-
         <!-- Cards -->
         <div class="row mb-4">
           <div class="col-md-3">
@@ -105,8 +103,8 @@
                   </div>
                 </div>
                 <div class="col-7 left">
-                  <h3 style="color: #F3642C;">5</h3>
-                  <h6>My Listings</h6>
+                  <h3 style="color: #27356F;">5</h3>
+                  <p style="color: #485056;"><b>My Listings</b></p>
                 </div>
               </div>
             </div>
@@ -114,25 +112,14 @@
           <div class="col-md-3">
             <div class="card text-center p-3">
               <div class="row">
-                <div class="col-4 center">
-                  <i class="fa-solid fa-eye fa-2x"></i>
+                <div class="col-5 center">
+                  <div class="shadow">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
                 </div>
-                <div class="col-8 left">
-                  <h3>438</h3>
-                  <p>Total Views</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <div class="row">
-                <div class="col-4 center">
-                  <i class="fa-solid fa-inbox fa-2x"></i>
-                </div>
-                <div class="col-8 left">
-                  <h3>12</h3>
-                  <p>Inbox</p>
+                <div class="col-7 left">
+                  <h3 style="color: #27356F;">438</h3>
+                  <p style="color: #485056;"><b>Total Views</b></p>
                 </div>
               </div>
             </div>
@@ -140,12 +127,29 @@
           <div class="col-md-3">
             <div class="card text-center p-3">
               <div class="row">
-                <div class="col-4 center">
-                  <i class="fa-solid fa-star fa-2x"></i>
+                <div class="col-5 center">
+                  <div class="shadow">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
                 </div>
-                <div class="col-8 left">
-                  <h3>34</h3>
-                  <p>My Favorites</p>
+                <div class="col-7 left">
+                  <h3 style="color: #27356F;">12</h3>
+                  <p style="color: #485056;"><b>Inbox</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center p-3">
+              <div class="row">
+                <div class="col-5 center">
+                  <div class="shadow">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="col-7 left">
+                  <h3 style="color: #27356F;">34</h3>
+                  <p style="color: #485056;"><b>My Favorites</b></p>
                 </div>
               </div>
             </div>
@@ -154,7 +158,7 @@
 
         <div class="row">
           <!-- Graph -->
-          <div class="col-md-6">
+          <div class="col-md-7 ">
             <div class="card p-4">
               <p><b>Total Views on My Listing</b></p>
               <canvas id="myChart" height="240"></canvas>
@@ -162,27 +166,30 @@
           </div>
 
           <!-- Recent Activities -->
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="card p-4">
-              <p><b>Recent Activities</b></p>
+              <span><b>Recent Activities</b></span>
               <ul class="list-unstyled">
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Kathy Brown left a review on <a href="#">Hair Salon</a></li>
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Someone favorited your <a href="#">Computer Repair Shop</a> listing!</li>
-                <li class="mb-2"><span><i class="fa-solid fa-heart"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Kathy Brown left a review on <a href="#">Hair Salon</a></li>
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Someone favorited your <a href="#">Computer Repair Shop</a> listing!</li>
-                <li class="mb-2"><span><i class="fa-solid fa-house-chimney"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-house-chimney"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-house-chimney"></i></span> Kathy Brown left a review on <a href="#">Hair Salon</a></li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-house-chimney"></i></span> Someone favorited your <a href="#">Computer Repair Shop</a> listing!</li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-heart"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-house-chimney"></i></span> Kathy Brown left a review on <a href="#">Hair Salon</a></li>
+                <li class="mb-2 activity-font "><span><i class="fa-solid fa-house-chimney"></i></span> Someone favorited your <a href="#">Computer Repair Shop</a> listing!</li>
+                <li class="mb-2 activity-font"><span><i class="fa-solid fa-house-chimney"></i></span> Your listing <a href="#">Mexican Restaurant</a> has been approved!</li>
               </ul>
             </div>
           </div>
         </div>
-
+        <br>
+        <footer>
+          <h5>Copyright © 2022 BizBen. All Rights Reserved.</h5>
+        </footer>
       </div>
     </div>
   </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
