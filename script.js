@@ -7,7 +7,7 @@ const myChart = new Chart(ctx, {
       label: 'Views',
       data: [30, 20, 40, 35, 25, 45, 60],
       backgroundColor: 'rgba(0, 0, 0, 0.1)',
-      borderColor: '#F3642C',
+      borderColor: '#27356F',
       borderWidth: 2,
       fill: true,
       tension: 0.4
