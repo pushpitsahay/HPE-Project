@@ -6,118 +6,92 @@ body {
   padding: 0;
 }
 .main-content{
-background-color: #f5fff6f8;
-padding: 30px;
+  background-color: #f5fff6f8;
+  padding: 30px;
+  height: 100%;
 }
 /* Sidebar */
 .sidebar {
   min-width: 225px;
 }
 .sidebar ul li a {
-color: black;
-font-size: 15px;
-gap: 15px;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 15px;
-border-radius: 3px;
-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+  font-size: 15px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 .sidebar ul li a:hover {
-background-color: #F3642C;
-color: white;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #F3642C;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .sidebar ul li a:hover i {
-color: white;
+  color: white;
 }
 /* Search */
 .search-section {
-display: flex;
-align-items: center;
-justify-content: center;
-border: 1px solid #ccc;
-border-radius: 3px;
-padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 1px;
 }
 .search-section input {
-width: 400px;
-border-radius: 5px;
-font-size: 13px;
-border: 1px solid transparent;
+  width: 650px;
+  border-radius: 3px;
+  font-size: 13px;
+  border: 1px solid transparent;
 }
 .search-btn {
-padding: 12px 15px;
-background-color: #F3642C;
-color: white;
-border: none;
-font-size: 11px;
-border-radius: 3px;
-cursor: pointer;
+  padding: 12px 15px;
+  background-color: #F3642C;
+  color: white;
+  border: none;
+  font-size: 11px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 /* Navbar */
-nav ul {
-display: flex;
-list-style: none;
-justify-content: center;
-align-items: center;
-margin: -5px;
-padding-bottom: 10px;
-gap: 10px;
-position: relative;
+.navbar{
+  font-size: 13px;
 }
-nav ul li {
-position: relative;
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: row; 
 }
-nav ul li a {
-color: #333;
-font-size: 15px;
-text-decoration: none;
-display: inline-block;
-width: max-content;
+.dropdown-item {
+  margin-right: 10px;
 }
-nav ul li p {
-color: #333;
-width: 40ch;
-line-height: 24px;
-font-size: 13px;
-}
-nav .dropdown {
-position: absolute;
-top: 100%;
-left: 0;
-background-color: white;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-border-radius: 3px;
-overflow: hidden;
-opacity: 0;
-visibility: hidden;
-transform: translateY(10px);
-transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-z-index: 10;
-padding: 20px;
-}
-nav li:hover .dropdown {
-opacity: 1;
-visibility: visible;
-transform: translateY(0);
-}
-.dropdown ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-.dropdown ul li {
-padding: 5px 10px;
-width: fit-content;
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .listing {
-margin-top: -5px;
-border: 1px solid silver;
-padding: 8px;
-border-radius: 3px;
-}
+  margin-top: -5px;
+  border: 1px solid silver;
+  padding: 2px;
+  border-radius: 3px;
+  } 
 /* Main Content */
 .card {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -128,18 +102,18 @@ border-radius: 3px;
   font-size: 30px;
 }
 .shadow {
-font-size: 20px;
-color: #7E93A9;
-margin-right: 10px;
-background-color: #eff2f9;
-padding: 20px;
-border-radius: 50%;
+  font-size: 20px;
+  color: #7E93A9;
+  margin-right: 10px;
+  background-color: #eff2f9;
+  padding: 20px;
+  border-radius: 50%;
 }
 .center {
-align-content: center;
+  align-content: center;
 }
 .left{
-text-align: left;
+  text-align: left;
 }
 /* Recent Activity */
 ul li a {
@@ -149,7 +123,7 @@ ul li a {
 .activity-font{
   font-size: 13px;
   color: #333;
-  margin: 15px;
+  margin: 14px;
 }
 /* Footer */
 h5 {
