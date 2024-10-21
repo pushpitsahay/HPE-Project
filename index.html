@@ -31,8 +31,8 @@
           <li class="nav-item"><a href="nav-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
         </ul>
       </div>
-
-      <div class="container-fluid p-4">
+      
+      <div class="container-fluid p-4" style="height: 100vh;">
         <!-- Header -->
         <div class="d-flex justify-content-between mb-4">
           <div class="search-section">
@@ -46,48 +46,55 @@
         </div>
         
         <!-- Navbar -->
-        <nav>
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> SEARCH BUSINESSES</a>
-              <div class="dropdown"> <!-- Custom CSS For Dropdown -->
-                <ul>
-                  <li><a href="#"><b>Hybrid Cloud Platform</b></a>
-                    <p>Bring the cloud experlence to all your IT.
-                      <br>
-                      Deploy and manage resources across your private and public clouds while retaining control of your data and flexibility over how you consume and manage your services.
-                    </p>
-                  </li>
-                  <li><a href="#"><b>HPE GreenLake</b></a>
-                    <p>Platform</p>
-                    <p>Services</p>
-                    <p>Marketplace</p>
-                    <p>Launch HPE GreenLake</p>
-                  </li>
-                  <li><a href="#"><b>All Products and Solutions</b></a>
-                    <p>Product types</p>
-                    <p>Solutions by topic</p>
-                    <p>Industries</p>
-                    <p>See all</p>
-                  </li>
-                </ul> 
-              </div>
-            </li>
-            <li><a href="#"><i class="fa-regular fa-address-card"></i> ADVERTISING</a></li>
-            <li><a href="#"><i class="fa-regular fa-file"></i> RESOURCES</a></li>
-            <li><a href="#"><i class="fa-regular fa-pen-to-square"></i> BLOG</a></li>
-            <li><a href="#"><i class="fa-regular fa-comment"></i> DISCUSSIONS</a></li>
-            <li><a href="#"><i class="fa-regular fa-calendar"></i> EVENTS</a>
-            </li>
-            <li><a href="#"><i class="fa-regular fa-user"></i> ABOUT US</a></li>
-            <br/>
-            <li><a href="#"><i class="fa-solid fa-user"></i> My BizBen</a></li>
-            <div class="listing">
-              <li><a href="#"><i class="fa-solid fa-circle-plus"></i> CREATE LISTING</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!-- SEARCH BUSINESSES with Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="searchBusinessesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i> SEARCH BUSINESSES</a>
+                  <ul class="dropdown-menu" aria-labelledby="searchBusinessesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"><b>Hybrid Cloud Platform</b></a>
+                      <p class="dropdown-item-text">Bring the cloud experience to all your IT. Deploy and manage resources across your private and public clouds while retaining control of your data and flexibility over how you consume and manage your services.</p>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#"><b>HPE GreenLake</b></a>
+                      <p class="dropdown-item-text">Platform</p>
+                      <p class="dropdown-item-text">Services</p>
+                      <p class="dropdown-item-text">Marketplace</p>
+                      <p class="dropdown-item-text">Launch HPE GreenLake</p>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#"><b>All Products and Solutions</b></a>
+                      <p class="dropdown-item-text">Product types</p>
+                      <p class="dropdown-item-text">Solutions by topic</p>
+                      <p class="dropdown-item-text">Industries</p>
+                      <p class="dropdown-item-text">See all</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-address-card"></i> ADVERTISING</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-file"></i> RESOURCES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-pen-to-square"></i> BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-comment"></i> DISCUSSIONS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-calendar"></i> EVENTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-user"></i> ABOUT US</a></li>
+                <br/>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user"></i> My BizBen</a></li>
+                <div class="listing">
+                  <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-circle-plus"></i> CREATE LISTING</a></li>
+                </div>
+              </ul>
             </div>
-          </ul>
+          </div>
         </nav>
-        
+      
         <div class="main-content">
           
         <h2 class="mb-1">Hi, John!</h2>
